@@ -1,0 +1,79 @@
+.accordion {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.accordion, .sub-menu {
+  list-style-type: none;  
+}
+
+.accordion li.files > a:before {
+  background-position: 0px 0px;
+}
+
+.accordion li.files:hover > a:before,
+.accordion li.files:target > a:before,
+.accordion li.files > a.active:before {
+  background-position: 0px -24px;
+}
+
+.accordion li.mail > a:before {
+  background-position: -24px 0px;
+}
+
+.accordion li.mail:hover > a:before,
+.accordion li.mail:target > a:before,
+.accordion li.mail > a.active:before {
+  background-position: -24px -24px;
+}
+
+.accordion li.cloud > a:before {
+  background-position: -48px 0px;
+}
+
+.accordion li.cloud:hover > a:before,
+.accordion li.cloud:target > a:before,
+.accordion li.cloud > a.active:before {
+  background-position: -48px -24px;
+}
+
+.accordion li.sign > a:before {
+  background-position: -72px 0px;
+}
+
+.accordion li.sign:hover > a:before,
+.accordion li.sign:target > a:before,
+.accordion li.sign > a.active:before {
+  background-position: -72px -24px;
+}
+
+.accordion li > .sub-menu {
+  display: none;
+  padding: 0 !important;
+}
+
+.accordion li:target > .sub-menu {
+  display: block;
+}
+
+.accordion-header {
+  text-align: center;
+  margin-bottom: 0;
+  border-bottom: 5px solid #f5751e;
+  color: #f5751e;
+}
+
+.accordion-header a {
+  font-family: 'Bebas Neue', cursive !important;
+  font-size: 42px;
+  line-height: 72px;
+  font-weight: 400;
+  color: #f5751e;
+}
+
+.accordion .accordion-header .sub-menu li {
+  margin: 0px auto;
+  font-size: 20px;
+  background: #e3e6eb;
+  padding: 30px 20%;
+}

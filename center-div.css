@@ -1,0 +1,12 @@
+.center-object {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #A2BEDE;
+  background-color: #165396;
+  font-size: 40px;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
