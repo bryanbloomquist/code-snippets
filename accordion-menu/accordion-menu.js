@@ -8,5 +8,8 @@ accordion_head.on('click', function(event) {
     $(this).next().stop(true,true).slideToggle('normal');
     accordion_head.removeClass('active');
     $(this).addClass('active');
+  } else {
+    $(this).next().stop(true,true).slideToggle('normal');
+    $(this).removeClass('active');
   }
 });
