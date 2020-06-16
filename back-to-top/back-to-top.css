@@ -8,12 +8,10 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .2s, opacity .2s, visibility .2s;
+  transition: all .2s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  -webkit-box-shadow: -9px 10px 25px -10px rgba(0,0,0,0.75);
-  -moz-box-shadow: -9px 10px 25px -10px rgba(0,0,0,0.75);
   box-shadow: -9px 10px 25px -10px rgba(0,0,0,0.75);
 }
 
@@ -22,7 +20,7 @@
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 50px;
   color: #fff;
 }
