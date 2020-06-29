@@ -1,0 +1,369 @@
+/*
+Theme Name: wp-bootstrap-4-child
+Template: wp-bootstrap-4
+*/
+
+/* Cursive Font */
+/* font-family: 'olicana-smooth', sans-serif; */
+
+/* Skinny Serif Font */
+/* font-family: 'span', serif; */
+
+/* Skinny Sans-Serif Font */
+/* font-family: 'brandon-grotesque', sans-serif; */
+
+.site {
+  font-family: 'brandon-grotesque', sans-serif;
+  overflow-x: hidden;
+}
+
+.site a {
+  color: #F22998;
+}
+
+.site a:hover {
+  color: #f291C7;
+}
+
+header.site-header {
+  border-bottom: none;
+}
+
+.navbar {
+  padding: 12px 24px 0;
+  font-size: 20px;
+}
+
+.nav-item a {
+  color: #000000;
+}
+
+.nav-item.active a {
+  color: #F22998;
+}
+
+.nav-item:not(.active) a:hover {
+  color: #F291C7;
+}
+
+.ambiente-slideshow {
+  height: 600px;
+  position: relative;
+  margin: 24px;
+  width: calc(100% - 48px);
+}
+
+.ambiente-slideshow .slide {
+  box-shadow: 0 8px 12px -4px #000000;
+  transition: opacity 2s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.ambiente-slideshow .slide-top {
+  background-position: top;
+}
+
+.ambiente-slideshow .slide-center {
+  background-position: center;
+}
+
+.ambiente-slideshow .slide-bottom {
+  background-position: bottom;
+}
+
+@media screen and (max-width: 768px) {
+  .ambiente-slideshow {
+    height: 300px;
+  }
+}
+
+.ambiente-slideshow .slide.show {
+  opacity: 1;
+}
+
+.front-page-1 h2 {
+  font-family: 'span', serif;
+}
+
+.left-image-overlay {
+  clip-path: polygon(100% 0, 75% 0%, 100% 50%, 75% 100%, 100% 100%);
+  background: #ebebeb;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  left: 0px;
+  top: 0px;
+}
+
+.right-text-overlay {
+  clip-path: polygon(25% 0, 100% 0%, 100% 100%, 25% 100%, 50% 50%);
+  background: #ffffff;;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.left-text-overlay {
+  clip-path: polygon(75% 0, 0 0, 0 100%, 75% 100%, 50% 50%);
+  background: #ebebeb;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.right-image-overlay {
+  clip-path: polygon(25% 0%, 0 0, 0 100%, 25% 100%, 0% 50%);
+  background: #ffffff;
+  position: absolute;
+  bottom: -1px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+
+.front-page-2 p {
+  font-family: 'span', serif;
+  text-align: justify;
+  font-size: 20px;
+  padding: 0 8%;
+  z-index: 1;
+}
+
+@media screen and (max-width:768px) {
+  .left-image-overlay,
+  .right-text-overlay,
+  .left-text-overlay,
+  .right-image-overlay {
+    clip-path: none;
+    top:0;left:0;right:100%;bottom:100%;
+  }
+  .front-page-2 img {
+    padding: 12px;
+    border-radius: 48px;
+  }
+  .front-page-2 p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+/*////////// BRAND BUTTON STYLE //////////*/
+
+a.brand-button {
+  background-color: #F291C7;
+  color: #ffffff;
+  padding: 12px 36px;
+  display: inline-block;
+  margin: 12px 0;
+  box-shadow: 0 8px 12px -4px #000000;
+  border-radius: 12px;
+  position: relative;
+  transition: all .2s;
+  font-family: 'brandon-grotesque', sans-serif;
+}
+
+a.brand-button:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all .2s;
+  box-shadow: 0 6px 10px -4px #000000;
+  top: 2px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*////////// GALLERY STYLE //////////*/
+
+#gallery-2 {
+  margin: 0 24px;
+}
+
+#gallery-2 .gallery-item {
+  padding: 0 12px 24px;
+}
+
+#gallery-2 .gallery-item img {
+  box-shadow: 0 4px 8px -2px #000000;
+  transition: all .5s;
+}
+
+#gallery-2 .gallery-item img:hover {
+  box-shadow: 0 4px 8px -2px #F291C7;
+  transition: all .5s;
+}
+
+.gallery-credits {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.gallery-credits h2 {
+  font-family: 'olicana-smooth', sans-serif;
+}
+
+.gallery-credits a {
+  font-family: 'span', serif;
+  color: #F22998;
+}
+
+.gallery-credits a:hover {
+  text-decoration: none;
+  color: #F291C7;
+}
+
+/*////////// FOOTER STYLE //////////*/
+
+.insta-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px auto 24px;
+  justify-content: center;
+  box-shadow: 0 8px 16px -4px #000000;
+}
+
+.insta-gallery a {
+  width: 12.5%;
+}
+
+.insta-gallery a:focus {
+  border: none;
+}
+
+.insta-gallery .gallery-image {
+  overflow: hidden;
+  transition: all .5s;
+  width: 100%;
+  min-height:100%;
+}
+
+.insta-gallery a:hover .gallery-image {
+  transform: scale(1.05);
+  transition: all .5s;
+}
+
+@media screen and (max-width: 768px) {
+  .insta-gallery a {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .insta-gallery a {
+    width: 50%;
+  }
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+footer.site-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: hsla(327, 79%, 76%, 0.667);
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.footer-section h2 {
+  font-family: "olicana-smooth", sans-serif;
+}
+
+.site-footer .footer-section a {
+  font-family: "brandon-grotesque", sans-serif;
+  color: #ffffff !important;
+}
+
+.site-footer .footer-section a:hover {
+  text-decoration: underline;
+}
+
+.blue42footer .contact-us {
+  font-size: 28px;
+}
+
+.blue42footer p {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.blue42footer p span {
+  font-size: 16px;
+}
+
+.blue42footer p span a {
+  color: #00ccff !important;
+}
+
+.blue42footer p span a img {
+  width: 20px;
+  height: 24px;
+  vertical-align: text-bottom;
+  border-radius: 4px;
+  padding: 2px
+}
+
+#back-to-top {
+  display: inline-block;
+  background-color: #F22998;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: all .2s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0 12px 24px -8px #000000;
+}
+
+#back-to-top::after {
+  content: "\f077";
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 50px;
+  color: #fff;
+}
+
+#back-to-top:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #c10b6f;
+}
+
+#back-to-top:active {
+  background-color: #f76eb9;
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+

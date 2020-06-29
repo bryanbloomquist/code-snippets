@@ -1,0 +1,211 @@
+[id|="new-page"] > div {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+[id|="new-page"] > div > div > div > div > div {
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.Main-content {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.tweak-site-width-option-full-background, .Intro-content, .code-block, .html-block {
+  width: 100% !important;
+}
+
+.custom-heading {
+  color: white;
+  background: black;
+  padding: 24px 0;
+  border-top: 12px solid firebrick;
+  border-bottom: 12px solid firebrick;
+  box-shadow: 0px 4px 12px black;
+}
+
+.custom-heading h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.custom-heading h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.how-to-donate {
+  padding: 24px 20%;
+  background-image: url("https://static1.squarespace.com/static/54b86ec4e4b0d1f230c8bfe4/t/5eea5429220066720b701325/1592415273768/background-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inner-shadow {
+  box-shadow: inset 0 12px 24px -12px black;
+}
+
+.red-bg {
+  padding: 24px 20%;
+  color: white;
+  background: #b22222;
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: .5rem
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flex-45 {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-45 {
+    width: 100%;
+  }
+}
+
+.flex-10 {
+  width: 10%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-button {
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  background: firebrick;
+  padding: 4px 32px;
+  border-radius: 12px;
+  color: white;
+}
+
+.brand-button-2 {
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  background: white;
+  padding: 4px 32px;
+  border-radius: 12px;
+  color: firebrick;
+}
+
+.get-involved {
+  background-image: url("https://static1.squarespace.com/static/54b86ec4e4b0d1f230c8bfe4/t/5eea63268c439a441dbdd957/1592419110186/background-2.png.png");
+  background-size: cover;
+  background-position: 50% 20%;
+  padding: 24px 10%;
+  justify-content: space-between;
+}
+
+.get-involved h4 {
+  font-size: 2rem;
+  color: white;
+  margin: 1rem;
+}
+
+.get-involved a {
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  border: 2px solid white;
+}
+
+.icon-container {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 100%;
+  color: firebrick;
+}
+
+.icon-container img {
+  width: 50%;
+}
+
+.padded-container {
+  padding: 24px 24%;
+}
+.small-padded-container {
+  padding: 12px 12%;
+}
+@media screen and (max-width:768px){
+  .padded-container {
+    padding: 16px 16%;
+  }
+}
+@media screen and (max-width:600px){
+  .padded-container {
+    padding: 8px 8%;
+  }
+}
+
+.faqTable {
+  margin: 0 15%;
+}
+
+.faqTable tr {
+  border-bottom: 2px solid firebrick;
+  vertical-align: top;
+}
+
+.faqTable tr:last-child {
+  border-bottom: none;
+}
+
+.faqTable tr td:first-child {
+  width: 25%;
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+  padding-right: 12px;
+}
+
+.faqTable tr td:last-child {
+  width: 75%;
+  padding-bottom: 20px;
+}
+
+.sqs-block-horizontalrule hr {
+  height: 4px;
+  background: black;
+  border: 4px solid firebrick;
+  transform: skewX(-45deg);
+}
+
+#block-yui_3_17_2_1_1593089707831_42284,
+#block-96105fe770dd99f89d64 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#block-yui_3_17_2_1_1593439138331_38882 {
+  background: black;
+  border: 4px solid firebrick;
+}
+
+#yui_3_17_2_1_1593439138331_41465 {
+  border: 4px solid firebrick;
+}
