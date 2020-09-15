@@ -1,0 +1,54 @@
+<!-- ----------CSS STYLESHEET---------- -->
+
+  <style>
+
+    #ie-is-evil {
+      display: none;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      background: #fddb33;
+      z-index: 1000;
+    }
+
+    #ie-is-evil p {
+      padding-top: 1rem;
+    }
+
+    #ie-is-evil a {
+      background: #000000;
+      color: #ffffff;
+      border: 4px solid #ffffff;
+      margin: 12px;
+      padding: 12px;
+    }
+
+  </style>
+
+<!-- ----------HTML MARK UP---------- -->
+
+  <body>
+
+    <div id="ie-is-evil" class="centered">
+      <p style="font-size:2rem;">OH NO! Looks like you are using Internet Explorer to view this page!<p>
+      <p>This Page Is Not Compatable With Internet Explorer. Please Use A Different Browser.</p>
+      <p>
+        <a href="https://www.google.com/chrome/">Download Chrome</a>
+        <a href="https://www.mozilla.org/en-US/firefox/new/">Download Firefox</a>
+      </p>
+      <p>"Courage is the power to let go of the familiar." <strong>- Raymond Lindquist</strong>
+    </div>
+    
+  </body>
+
+<!-- ----------JAVASCRIPT---------- -->
+
+  <script>
+
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
+    if (isIE) {
+      document.getElementById("ie-is-evil").style.display = "flex";
+    }
+
+  </script>

@@ -1,10 +1,85 @@
-
-.jotform-form .form-input-wide,
-.jotform-form .form-textbox,
-.jotform-form .form-address-table,
-.jotform-form .form-textarea {
-    max-width : 100%;
+*, *::before, *::after {
+    box-sizing: border-box !important;
 }
+
+/* sets inputs and their container to full width of container */
+.signature-pad-wrapper, /* optional, if using signature */
+.qq-uploader, /* optional, if using file uploader */
+.form-input-wide,
+.form-textbox,
+.form-textarea {
+    width : 100% !important;
+    max-width : 100% !important;
+} 
+
+/* gets rid of yellow background when input is active */
+.form-line-active {
+    background-color: #ffffff !important;
+}
+
+
+
+
+
+.form-line-active input:focus,
+.form-line-active textarea:focus {
+    box-shadow: 0 4px 8px rgba(0,0,0,.4) !important;
+}
+
+.form-textbox:focus,
+.form-textbox:active,
+.form-textarea:focus,
+.form-textarea:active {
+    border-color: transparent !important;
+}
+
+.qq-uploader {
+    text-align : center !important;
+}
+
+.qq-upload-button,
+.form-submit-button {
+    background : #c41521 !important;
+    border-color : #c41521 !important;
+}
+
+#label_15 {
+    float : left;
+    width : calc(100% - 80px) !important;
+}
+
+#cid_15 {
+    float : right;
+    width : 60px !important;
+}
+
+#label_input_15_0 {
+    text-align : center;
+}
+
+#label_input_15_0::before {
+    background-color : #ffffff !important;
+    border-color : #c41521 !important;
+    border-width : 3px !important;
+}
+
+#label_input_15_0::after {
+    content : "+" !important;
+    color : #c41521 !important;
+    font-weight : 100 !important;
+    font-size : 44px !important;
+    margin-top: 0 !important;
+    top : -17px !important;
+    left : 1px !important;
+    width : 0 !important;
+    height : 0 !important;
+    background-color : #c41521 !important;
+}
+
+.form-required {
+    color : #c41521 !important;
+}
+
 
 .jotform-form [data-type="control_fullname"] .form-sub-label-container:nth-last-child(2):first-child {
     margin-right : 5%;
