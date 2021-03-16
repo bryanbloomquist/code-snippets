@@ -1,11 +1,9 @@
 <style>
 
   #back-to-top {
-    display: inline-block;
     background-color: #015b80;
     width: 50px;
     height: 50px;
-    text-align: center;
     border-radius: 4px;
     position: fixed;
     bottom: 30px;
@@ -15,15 +13,14 @@
     visibility: hidden;
     z-index: 1000;
     box-shadow: -9px 10px 25px -10px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #back-to-top::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
+    content: "\25b2";
     font-size: 2rem;
-    line-height: 50px;
     color: #fff;
   }
 

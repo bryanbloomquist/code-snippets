@@ -5,10 +5,14 @@
     #ie-is-evil {
       display: none;
       position: fixed;
+      top: 0;
       height: 100vh;
       width: 100vw;
       background: #fddb33;
       z-index: 1000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     #ie-is-evil p {
@@ -30,13 +34,14 @@
   <body>
 
     <div id="ie-is-evil" class="centered">
-      <p style="font-size:2rem;">OH NO! Looks like you are using Internet Explorer to view this page!<p>
+      <p style="font-size:2rem;">OH NO! Looks like you are using Internet Explorer to view this page!</p>
       <p>This Page Is Not Compatable With Internet Explorer. Please Use A Different Browser.</p>
       <p>
-        <a href="https://www.google.com/chrome/">Download Chrome</a>
-        <a href="https://www.mozilla.org/en-US/firefox/new/">Download Firefox</a>
+        <a href="https://www.google.com/chrome/" target="_blank" rel="noreferrer noopener">Download Chrome</a>
+        <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="noreferrer noopener">Download Firefox</a>
+        <a href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noreferrer noopener">Download Edge</a>
       </p>
-      <p>"Courage is the power to let go of the familiar." <strong>- Raymond Lindquist</strong>
+      <p>"Courage is the power to let go of the familiar." <strong>- Raymond Lindquist</strong></p>
     </div>
     
   </body>
