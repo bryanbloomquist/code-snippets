@@ -1,0 +1,172 @@
+.front-page-rifles {
+	background-image: url(https://nemoarms.goblue42.com/wp-content/uploads/2020/07/product-bg.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.slide {
+	position: relative !important;
+	z-index: 0 !important;
+}
+
+.slick-next,
+.slick-prev {
+	z-index: 1;
+	height: 100% !important;
+	width: 10% !important;
+	transition: all 0.2s;
+}
+
+.slick-next {
+	right: 0 !important;
+}
+
+.slick-prev {
+	left: 0 !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+	transition: all 0.2s;
+}
+
+.slick-next:hover:before,
+.slick-prev:hover:before {
+	color: #c41520;
+}
+
+.front-page-rifles [class*="col-"] {
+	padding: 0;
+}
+
+.product-header {
+	display: inline-block;
+	border-bottom: 4px solid #c41520;
+	padding-left: 10%;
+}
+
+.product-header h2 {
+	color: white !important;
+	text-align: right;
+	text-transform: uppercase !important;
+	font-size: 3rem !important;
+	font-family: "NemoArms", sans-serif !important;
+	margin: 12px 0 0 0;
+	display: inline-block;
+}
+
+.products-slider .slick-track {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	backface-visibility: hidden;
+}
+
+.product-buttons {
+	position: absolute;
+	bottom: 5%;
+}
+
+.products-slider .buttons {
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.product-buttons .nemoButton {
+	font-size: 16px;
+	text-align: center;
+	padding: 12px 24px !important;
+	min-width: 250px;
+	margin: 0;
+}
+
+.product-buttons .nemoButton#rifle-class {
+	font-family: NemoArms;
+}
+
+.product-slider-side {
+	display: flex;
+	height: 100%;
+}
+
+.product-slider-side img {
+	padding: 10px 0;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	transition: all 1s;
+}
+
+.product-slider-side img.hidden {
+	display: none;
+}
+
+.nemoButton {
+	color: white !important;
+	background-color: #c41520;
+	background-image: url("https://nemoarms.com/wp-content/uploads/2020/08/red-texture.png");
+	background-size: cover;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-transform: uppercase;
+	padding: 12px 36px !important;
+	margin: 12px;
+	display: inline-block;
+	z-index: 10;
+	transition: all 0.2s !important;
+	border: none !important;
+	border-radius: 4px !important;
+}
+
+.nemoButton:hover {
+	background-color: #b0131d;
+	color: white;
+	text-decoration: none;
+	transform: translateY(-3px);
+	box-shadow: 0 6px 10px -4px #000000;
+}
+
+.nemoButton:active {
+	transform: translateY(-1px);
+	box-shadow: 0 2px 4px -1px #000000;
+}
+
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.product-slider-side {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.front-page-rifles [class*="col-"] {
+		padding: 0 15px;
+	}
+	.product-header {
+		margin-left: -15px;
+	}
+	.product-header h2 {
+		font-size: 2rem;
+	}
+	.products-slider .buttons {
+		bottom: 0;
+	}
+	.product-buttons {
+		margin-left: -15px;
+	}
+	.product-buttons .nemoButton {
+		font-size: 12px;
+		width: 100%;
+		padding: 12px 0 !important;
+		min-width: auto;
+	}
+}

@@ -1,0 +1,96 @@
+.media-center {
+	max-width: 1200px;
+	margin: 40px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.media-center__card {
+	position: relative;
+	width: 360px;
+	height: 360px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	border: 4px outset;
+	margin: 0 12px 24px;
+	font-family: "Ronduit", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 24px;
+	color: white;
+	cursor: pointer;
+	background-size: 80%, cover;
+	background-position: 170% 270%, center;
+	background-repeat: no-repeat, no-repeat;
+	transition: all 0.3s;
+}
+
+.media-center .media-center__card:nth-child(odd) {
+	background-image: url("https://nemoarms.com/wp-content/uploads/2020/09/tri-lug-red.png"),
+		url("https://nemoarms.com/wp-content/uploads/2020/08/red-texture.png");
+	color: white;
+	background-blend-mode: multiply;
+}
+
+.media-center .media-center__card:nth-child(even) {
+	background-image: url("https://nemoarms.com/wp-content/uploads/2020/09/tri-lug-white.png"),
+		url("https://nemoarms.com/wp-content/uploads/2020/08/gray-texture.png");
+	color: #c41520;
+	background-blend-mode: soft-light;
+}
+
+.media-center__card:hover {
+	background-size: 90%, cover;
+	background-position: center, center;
+}
+
+.media-center__card:hover .media-center__card__link {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.media-center__card h3 {
+	transform: translateY(28px);
+	transition: all 0.3s;
+	color: #ffffff !important;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.media-center__card:hover h3 {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.media-center__card__link:link,
+.media-center__card__link:visited {
+	font-family: "Titillium Web", sans-serif;
+	text-transform: uppercase;
+	color: #ffffff !important;
+	letter-spacing: 3px;
+	padding: 4px 12px;
+	border: 4px outset;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s;
+	transform: scale(0);
+	opacity: 0;
+}
+
+.media-center .media-center__card__link:nth-child(even):link,
+.media-center .media-center__card__link:nth-child(even):visited {
+	background-image: url("https://nemoarms.com/wp-content/uploads/2020/08/red-texture.png");
+}
+
+.media-center .media-center__card__link:nth-child(odd):link,
+.media-center .media-center__card__link:nth-child(odd):visited {
+	background-image: url("https://nemoarms.com/wp-content/uploads/2020/08/gray-texture.png");
+}
+
+.media-center__card__link:hover {
+	text-decoration: none;
+	color: #ffffff !important;
+}

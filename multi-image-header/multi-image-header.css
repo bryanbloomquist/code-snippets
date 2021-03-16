@@ -1,0 +1,29 @@
+.slideshow-container {
+	display: flex;
+	width: 100%;
+}
+
+[class*="slideshow--"] {
+	height: 600px;
+	position: relative;
+	margin: 24px 0;
+	width: 25%;
+}
+
+[class*="slideshow--"] .slide {
+	transition: opacity 2s ease-in-out;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+[class*="slideshow--"] .slide.show {
+	opacity: 1;
+}

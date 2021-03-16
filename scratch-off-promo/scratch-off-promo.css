@@ -1,0 +1,26 @@
+#specialModal .modal-content {
+	border: 2px solid #000;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+#specialModal .close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	color: #ffffff;
+}
+
+#specialModal .close:hover {
+	color: #c41520 !important;
+}
+
+#specialModalImage {
+	width: 100% !important;
+	height: auto !important;
+	background-size: cover;
+	cursor: crosshair;
+	cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png)
+			53 53,
+		crosshair;
+}
